@@ -63,9 +63,6 @@ void PeriphCommonClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 #define SDRAM_ADD 0xD0000000
-
-uint8_t wdata[] = {0x1, 0x2, 0x3, 0x4, 0x5};
-uint8_t rdata[10];
 /* USER CODE END 0 */
 
 /**
@@ -111,6 +108,8 @@ int main(void)
 
   char src[] = "Hello";
   char dest[13];
+  uint8_t wdata[] = {0x1, 0x2, 0x3, 0x4, 0x5};
+  uint8_t rdata[10];
 
   memcpy(dest,src,6);
 
